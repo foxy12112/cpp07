@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/15 17:35:43 by ldick             #+#    #+#             */
-/*   Updated: 2025/08/17 12:38:16 by ldick            ###   ########.fr       */
+/*   Created: 2025/08/17 12:40:00 by ldick             #+#    #+#             */
+/*   Updated: 2025/08/17 12:43:59 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-# define ITER_HPP
+#ifndef ARRAY_HPP
+# define ARRAY_HPP
 
 #include <iostream>
 
-template <typename T, typename func>
+template<typename T>
 
-void iter(T *array, int size, func f)
+void	Array(T *arr)
 {
-	for (int i = 0; i < size; i++)
-		f(array[i]);
+	
 }
-
-template <typename T>
-
-void speak_manipulate_int(T i)
-{
-	std::cout << i + 9 << std::endl;
-}
-
 #endif
